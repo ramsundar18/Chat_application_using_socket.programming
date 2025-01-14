@@ -12,7 +12,7 @@ def chat_server():
     serv_soc.listen(5)
     soc_list.append(serv_soc)
 
-    print ("Chat Server Sarted, Listening on Port "+str(port))
+    print ("Chat Server Stared, Listening on Port "+str(port))
     while True:
         read,write,error=sel.select(soc_list,[],[],0)
         for i in read:
